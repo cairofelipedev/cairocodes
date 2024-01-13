@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Cairo Codes - cairo.codes</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <meta name="author" content="Cairo Felipe Developer">
+
+  <meta property="og:title" content="" />
+  <meta property="og:url" content="https://www.ittnet.net.br/" />
+  <meta property="og:image" content="https://www.ittnet.net.br/assets/img/imgog.jpg" />
+  <meta property="og:description" content="" />
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/favicon.png" rel="apple-touch-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            color1: '',
+            color2: '',
+            color3: '',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/swiper.css">
+  <meta name="google-site-verification" content="qSCxBdbZ-fGmeJ-nuQoKfNvU0NCT6cxoKxVEdfr3L7k" />
+</head>
+
+<body>
+  <header class="w-full">
+    <nav class="border-gray-200 bg-gradient-to-r from-color1 to-color2 pt-4 pb-4 md:pb-0">
+      <div class="flex flex-wrap items-center justify-between max-w-6xl px-4 mx-auto">
+        <a href="#">
+        </a>
+        <div class="flex items-center lg:order-2 space-x-2">
+          <div>
+            <a href="" class="text-white text-lg">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+          <div id="theme_toggler" x-data="{ show: true }">
+            <i @click="show = !show" :class="{'hidden': !show, 'block':show }" class="bi bi-moon-stars-fill"></i>
+            <i @click="show = !show" :class="{'block': !show, 'hidden':show }" class="bi bi-brightness-high-fill"></i>
+          </div>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="flex flex-col items-center justify-center min-h-screen">
+    <h1 class="text-5xl mr-3 font-bold">CAIRO</h1>
+    <h1 class="text-5xl font-bold">CODES</h1>
+    <p class="text-md text-center">Códigos Avançados do Início ao Fim.</p>
+  </div>
+  <script src="./assets/js/script.js"></script>
+  <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper_banners", {
+      slidesPerView: 1.1,
+      centeredSlides: true,
+      spaceBetween: 30,
+      loop: true,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
